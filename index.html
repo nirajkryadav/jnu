@@ -21,6 +21,82 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+
+    <!-- Display the countdown timer in an element -->
+<!-- 
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  // + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script> -->
+
+<script type="text/javascript">
+	var timer;
+
+var compareDate = new Date();
+compareDate.setDate(compareDate.getDate() + 38); //just for this demo today + 7 days
+
+timer = setInterval(function() {
+  timeBetweenDates(compareDate);
+}, 1000);
+
+function timeBetweenDates(toDate) {
+  var dateEntered = toDate;
+  var now = new Date();
+  var difference = dateEntered.getTime() - now.getTime();
+
+  if (difference <= 0) {
+
+    // Timer done
+    clearInterval(timer);
+  
+  } else {
+    
+    var seconds = Math.floor(difference / 1000);
+    var minutes = Math.floor(seconds / 60);
+    var hours = Math.floor(minutes / 60);
+    var days = Math.floor(hours / 24);
+
+    hours %= 24;
+    minutes %= 60;
+    seconds %= 60;
+
+    $(".days").text(days);
+    $(".hours").text(hours);
+    $(".minutes").text(minutes);
+    $(".seconds").text(seconds);
+  }
+}
+</script>
+
+
+
 </head><!--/head-->
 
 <body>
@@ -140,7 +216,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-9">
-					<div id="event-carousel" class="carousel slide" data-interval="false">
+
+						<h2>Speakers</h2>
+						<p>Eminent personalities from reputed institutions such as Central Forensics Science Laboratory, Bureau of Police Research & Development, Central Detective Training School, National Technical Research Organization, LNJN National Institute of Criminology & Forensic Science, Senior lawyers from Supreme Court of India, IPS
+						Officers will be invited as speakers for workshop.</p>
+						<p><b>Note: Profiles of the Speakers will be uploaded soon.</b></p>
+						
+
+					<!-- <div id="event-carousel" class="carousel slide" data-interval="false">
 						<h2 class="heading">OUR SPEAKERS</h2>
 						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
@@ -196,7 +279,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 				
 			</div>			
@@ -429,7 +512,7 @@
   	<script type="text/javascript" src="js/gmaps.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <!-- <script type="text/javascript" src="js/coundown-timer.js"></script> -->
     <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
     <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
