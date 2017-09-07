@@ -50,6 +50,7 @@ h2 {
   margin-top: 12px
 }
 
+
 .navbar-toggle .icon-bar {
   background-color: #fff;
 }
@@ -418,8 +419,7 @@ h2 {
 }
 
 .guitar {
-  position: absolute;
-  right:0;
+  right:10;
   top: 0
 }
 
