@@ -56,11 +56,45 @@ var x = setInterval(function() {
 }, 1000);
 </script> -->
 
-<script type="text/javascript">
+<script>
+var end = new Date('10/9/2017 09:00 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        $(".days").text(days);
+	    $(".hours").text(hours);
+	    $(".minutes").text(minutes);
+	    $(".seconds").text(seconds);
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+
+
+<!-- <script type="text/javascript">
 	var timer;
 
 var compareDate = new Date();
-compareDate.setDate(compareDate.getDate() + 38); //just for this demo today + 7 days
+compareDate.setDate('10/9/2017 10:1 AM'); //just for this demo today + 7 days
 
 timer = setInterval(function() {
   timeBetweenDates(compareDate);
@@ -93,7 +127,7 @@ function timeBetweenDates(toDate) {
     $(".seconds").text(seconds);
   }
 }
-</script>
+</script> -->
 
 
 
@@ -184,7 +218,8 @@ function timeBetweenDates(toDate) {
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
 					<h2>our workshop starts on<br>
 						october 9 at 8:30 AM</h2>
-				</div>				
+				</div>	
+				<div id="countdown"></div>			
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
 						<li>					
@@ -329,7 +364,7 @@ function timeBetweenDates(toDate) {
 	</section>
 	
 	
-	<section id="sponsor">
+	<!-- <section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
@@ -368,7 +403,7 @@ function timeBetweenDates(toDate) {
 			</div>
 		</div>
 	</section><!--/#sponsor-->
-
+ 
 	<section id="maps" style="background-color: #E4E4DF">
 		 <div class="container">
     <div class="row">
@@ -451,7 +486,7 @@ function timeBetweenDates(toDate) {
 										    </div>
 										 	<div>
 												<h5 style="text-align: center; color: black;font-size: 20px">
-													<b>DER. SAURABH KAUSHAL</b><br>
+													<b> ER. SAURABH KAUSHAL</b><br>
 														MANAGING DIRECTOR<br>
 														FLIPFLOP INFORSEC LABS, CHANDIGARH<br>
 														+91-7986275368<br>
@@ -469,7 +504,7 @@ function timeBetweenDates(toDate) {
 										    </div>
 										 	<div>
 												<h5 style="text-align: center; color: black;font-size: 20px;">
-													<b>DER. SHRUTI WADHWA</b><br>
+													<b> ER. SHRUTI WADHWA</b><br>
 														TRAINING & MARKETING HEAD<br>
 														FLIPFLOP INFORSEC LABS, CHANDIGARH<br>
 														+91-7973647814<br>
