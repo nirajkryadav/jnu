@@ -565,7 +565,7 @@ h2 {
 }
 
 .about-content {
-  width: 50%;
+  width: 60%;
    background-image: url("../images/about-bg.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
@@ -622,6 +622,7 @@ h2 {
 }
 
 #about .btn-primary:hover {
+  opacity: 0.6;
   background-color: #126d55
 }
 
