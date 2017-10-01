@@ -404,7 +404,16 @@ h2 {
  /*************************
 *******Event CSS******
 **************************/
+.v-center-align {
+    display: flex;
+    align-items: center;
+}
 
+.imgcenter{
+  display: block;
+  margin: auto;
+
+}
 .card-border-rounded {
     border-radius: 15px 50px;
     border: 2px solid #ffe627;
@@ -454,10 +463,6 @@ h2 {
   background-image: url("../images/speaker.png");
 }
 
-.guitar {
-  right:10;
-  top: 0
-}
 
 
 #coordinators h2 {
@@ -563,14 +568,21 @@ h2 {
 .guitar2 img {
   padding-top: 3%;
 }
+.organisation {
+  background-color: #ecedef;
+  background-image: url("../images/twitter-bg.jpg");
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat:no-repeat;
+  position: relative;
+  overflow: hidden;
+}
 
 .about-content {
-  width: 60%;
-   background-image: url("../images/about-bg.jpg");
-  background-position: left bottom;
+  width: 40%;
+  background-image: url("../images/about-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 70px 110px;
 }
 .Silver-content {
   width: 50%;
@@ -632,15 +644,6 @@ h2 {
 ******Twitter CSS****
 **************************/
 
-#twitter {
-  background-color: #ecedef;
-  background-image: url("../images/twitter-bg.jpg");
-  background-position: center bottom;
-  background-size: cover;
-  background-repeat:no-repeat;
-  position: relative;
-  overflow: hidden;
-}
 
 #Platinum {
   background-color: #ecedef;
