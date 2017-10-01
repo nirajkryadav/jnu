@@ -568,7 +568,8 @@ h2 {
 .guitar2 img {
   padding-top: 3%;
 }
-.organisation {
+
+#organisation {
   background-color: #ecedef;
   background-image: url("../images/twitter-bg.jpg");
   background-position: center bottom;
