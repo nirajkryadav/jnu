@@ -473,8 +473,6 @@ h2 {
   color: #FFFFFF;
   font-size: 36px;
   font-weight: 300;
-  margin-bottom: 40px;
-  margin-top: 70px;
   text-transform: uppercase;
 }
 #coordinators {
@@ -493,14 +491,6 @@ h2 {
 }
 
 
-#coordinators h2 {
-  color: #FFFFFF;
-  font-size: 36px;
-  font-weight: 300;
-  margin-bottom: 40px;
-  margin-top: 70px;
-  text-transform: uppercase;
-}
 .single-event {
   margin-bottom: 70px;
 }
