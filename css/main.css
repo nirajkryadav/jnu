@@ -15,7 +15,6 @@ body {
   color: #fff
 }
 
-
 .btn {
   border-radius: 0;
   font-family: 'Yanone Kaffeesatz','sans-serif';
@@ -426,8 +425,9 @@ h2 {
 
 
 .card:hover .card-img-top {
+  background-color: black;
   opacity: 0.5;
-    transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .card:hover .card-block {
@@ -463,6 +463,10 @@ h2 {
   background-image: url("../images/speaker.png");
 }
 
+.org-speaker{
+  background-image: url("../images/event-bg.jpg");
+}
+
 
 
 #coordinators h2 {
@@ -474,9 +478,9 @@ h2 {
   text-transform: uppercase;
 }
 #coordinators {
-  background-color: #33888f;
-  background-image: url("../images/performar-bg1.jpg");
-  background-position: 50% 0;
+  background-color: #c24c34;
+  background-image: url("../images/event-bg.jpg");
+  background-position: bottom;
   background-size: contain;
   position: relative;
   background-repeat: no-repeat;
@@ -520,6 +524,9 @@ h2 {
 #event-carousel {
   position: relative;
 }
+#org-carousel {
+  position: relative;
+}
 
 .even-control-left, 
 .even-control-right {
@@ -534,6 +541,22 @@ h2 {
 } 
 
 .even-control-right {
+  right: 0;
+}
+
+.org-control-left, 
+.org-control-right {
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  top: 0;
+}
+
+.org-control-left {
+  right: 3%
+} 
+
+.org-control-right {
   right: 0;
 }
 
@@ -879,7 +902,7 @@ h2 {
 ******Footer CSS****
 **************************/
 
-#footer {
+.footer {
   background-color: #212121;
   background-image: url("../images/footer-bg.jpg");
   background-position: center bottom;
@@ -898,4 +921,20 @@ h2 {
   color:#1B7B98
 }
 
+.footer ul { 
+  list-style:none; padding:0px; 
+}
+.footer li { 
+  padding:5px 50px;
+}
+.footer a { 
+  color:floralwhite; 
+}
+.footer a:hover { 
+  color:grey; text-decoration:none; 
+}
+
+.footer-border { 
+  border-left:solid 1px rgba(255,255,255,0.10); 
+}
 
