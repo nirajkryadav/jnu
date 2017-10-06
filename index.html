@@ -17,48 +17,47 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107286515-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)};
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107286515-1"></script>
 
-  gtag('config', 'UA-107286515-1');
-</script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments)};
+	  gtag('js', new Date());
 
-<script>
-var end = new Date('10/9/2017 08:00 AM');
+	  gtag('config', 'UA-107286515-1');
+	</script>
 
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var timer;
+	<script>
+		var end = new Date('10/9/2017 08:00 AM');
+	    var _second = 1000;
+	    var _minute = _second * 60;
+	    var _hour = _minute * 60;
+	    var _day = _hour * 24;
+	    var timer;
 
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
+	    function showRemaining() {
+	        var now = new Date();
+	        var distance = end - now;
+	        if (distance < 0) {
 
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+	            clearInterval(timer);
+	            document.getElementById('countdown').innerHTML = 'EXPIRED!';
 
-            return;
-        }
-        var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
+	            return;
+	        }
+	        var days = Math.floor(distance / _day);
+	        var hours = Math.floor((distance % _day) / _hour);
+	        var minutes = Math.floor((distance % _hour) / _minute);
+	        var seconds = Math.floor((distance % _minute) / _second);
 
-        $(".days").text(days);
-	    $(".hours").text(hours);
-	    $(".minutes").text(minutes);
-	    $(".seconds").text(seconds);
-    }
+	        $(".days").text(days);
+		    $(".hours").text(hours);
+		    $(".minutes").text(minutes);
+		    $(".seconds").text(seconds);
+	    }
 
-    timer = setInterval(showRemaining, 1000);
-</script>
-
+	    timer = setInterval(showRemaining, 1000);
+	</script>
 </head>
 
 <body>
@@ -206,7 +205,7 @@ var end = new Date('10/9/2017 08:00 AM');
 					<hr>
 					<br>
 
-					<!--
+
 					 <div id="event-carousel" class="carousel slide event-speaker" data-interval="false">
 						<h2 class="heading">OUR SPEAKERS</h2>
 						<br>
@@ -218,11 +217,11 @@ var end = new Date('10/9/2017 08:00 AM');
 								<div class="row">
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/gulshan.png" alt="Dr. Gulshan Rai">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/pradhan.jpg" alt="Dr. Gulshan Rai">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>R.K. Srivastava</h4>
-										    <p class="text-center">HoD, Computer Forensic Unit,<br> Central Bureau of Investigation</p>
+										    <h3>Dr. S.D. Pradhan</h4>
+										    <p class="text-center">Former Deputy <br>National Security Advisor<br> to PMO</p>
 										  </div>
 										</div>
 									</div>
@@ -231,11 +230,11 @@ var end = new Date('10/9/2017 08:00 AM');
 
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/duggal.png" alt="Sh. Pavan Duggal">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/saurabh.png" alt="Sh. Pavan Duggal">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>Sh. Pavan Duggal</h4>
-										    <p class="text-center">Internationally renowned. <br> India's top cyber lawyer.</p>
+										    <h3>Mr. Saurabh Kaushal</h4>
+										    <p class="text-center">Managing Driector<br>FlipFlops Inforsec,<br>NITTTR</p>
 										  </div>
 										</div>
 									</div>
@@ -245,11 +244,11 @@ var end = new Date('10/9/2017 08:00 AM');
 
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/gurcharan.png" alt="Gurcharan Singh">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/hegde.png" alt="Gurcharan Singh">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>Gurcharan Singh</h4>
-										    <p class="text-center">Faculty Cybercrimes <br>Central Detective Training School</p>
+										    <h3>Dr. V.G. Hegde</h4>
+										    <p class="text-center">Centre for <br>International Legal Studies,<br>Jawaharlal Nehru University</p>
 										  </div>
 										</div>
 									</div>
@@ -261,11 +260,11 @@ var end = new Date('10/9/2017 08:00 AM');
 
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/poonia.png" alt="Dr. M.P. Poonia">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/anoop.png" alt="Dr. M.P. Poonia">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>Dr. M.P. Poonia</h4>
-										    <p class="text-center">Vice Chairman<br> All India Council of Technical Education</p>
+										    <h3>Dr. Anoop Girdhar</h4>
+										    <p class="text-center">CEO-Founder,<br>Sedulity Solutions & Technologies</p>
 										  </div>
 										</div>
 									</div>
@@ -274,11 +273,11 @@ var end = new Date('10/9/2017 08:00 AM');
 
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/alok.png" alt="Mr. Alok Verma">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/desai.png" alt="Mr. Alok Verma">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>Sh. Alok Verma</h4>
-										    <p class="text-center">Director,<br> Central Cureau of Investigation</p>
+										    <h3>Dr. Bharat Desai</h4>
+										    <p class="text-center">Chairperson, <br>Centre for international legal studies,<br>Jawharlal Nehru University</p>
 										  </div>
 										</div>
 									</div>
@@ -288,11 +287,11 @@ var end = new Date('10/9/2017 08:00 AM');
 
 									<div class="col-sm-3 ">
 										<div class="card">
-										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/javeed.png" alt="Javeed Ahmad">
+										  <img class="card-img-top card-border-rounded col-md-12" src="images/speakers/sanjay.png" alt="Javeed Ahmad">
 										  <div class="card-block text-center">
 										  	<br><br><br>
-										    <h3>Sh. Javeed Ahmad</h4>
-										    <p class="text-center"> Director, <br> National Institute of Criminology<br> and Forensic Sciences</p>
+										    <h3>Sh. Sanjay Kumar Verma</h4>
+										    <p class="text-center"> IFS, <br>Additional secretary,<br>Cyber Diplomacy,<br> Ministry of external affairs</p>
 										  </div>
 										</div>
 									</div>
@@ -302,9 +301,8 @@ var end = new Date('10/9/2017 08:00 AM');
 						</div>
 						<br>
 					</div> 
-				-->
+
 				</div>
-				
 			</div>			
 		</div>
 	</section>
@@ -404,6 +402,7 @@ var end = new Date('10/9/2017 08:00 AM');
 					<!-- end of modal -->	
 				</div>
 			</div>
+		</div>
 	</section>
  
 	<section id="coordinators">
