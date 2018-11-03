@@ -1,2 +1,1 @@
-# cyber-jun
-# jnu
+# ECCCI event website
